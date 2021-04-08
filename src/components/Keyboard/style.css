@@ -1,0 +1,23 @@
+.key {
+  position: relative;
+  font-size: var(--font-size);
+  border-radius: 0 0 var(--radius) var(--radius);
+  text-transform: uppercase;
+  user-select: none;
+}
+
+.key--natural {
+width:var(--white-key-width);
+}
+
+
+.key--shar,
+.key--flat {
+width: var(--black-key-width);
+height: var(--black-key-height);
+padding-top: var(--black-key-padding);
+background-color: #111;
+color: white;
+margin: 0 calc(_0.5 * calc(var(--black-key-width)));
+z-index: 2;
+}
